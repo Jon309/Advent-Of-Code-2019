@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <TargetFramework>net472</TargetFramework>
         <RootNamespace>Advent.Of.Code._2019</RootNamespace>
         <OutputType>Exe</OutputType>
     </PropertyGroup>
