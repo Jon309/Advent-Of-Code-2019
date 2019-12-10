@@ -13,7 +13,7 @@ namespace Advent.Of.Code._2019._1
             var massList = new List<int>();
             
             StreamReader input = 
-                new StreamReader("/Users/henny/dev/Advent.Of.Code.2019/Advent.Of.Code.2019/input.txt");
+                new StreamReader("/Users/henny/dev/Advent.Of.Code.2019/AdventOfCode.2019/input.txt");
 
             while (!input.EndOfStream)
             {
@@ -23,9 +23,8 @@ namespace Advent.Of.Code._2019._1
             }
             
             var fuelCounter = new FuelCounter();
-            var totalFuel = fuelCounter.CalculateFuel(massList);
 
-            Console.WriteLine("Total Fuel Needed: " + totalFuel);
+            Console.WriteLine("Total Fuel Needed: " + fuelCounter.SumAllFuel(massList));
         }
     }
 }
