@@ -28,6 +28,24 @@ namespace AdventOfCode._2019.UnitTests
         }
         
         [Test]
+        public void PartTwoAnswerTest()
+        {
+            var opcodes = 
+                new StreamReader("/Users/henny/dev/Advent.Of.Code.2019/AdventOfCode.2019.DayTwo/input.txt")
+                    .ReadToEnd();
+            
+            var output = 2894520;
+            
+            var intCode = new IntCode(opcodes);
+            
+            intCode.Relocate(1, 12);
+            intCode.Relocate(2,2);
+            intCode.Start();
+            
+            Assert.AreEqual(output,intCode.GetValue(0));
+        }
+        
+        [Test]
         public void ParseInputTest()
         {
             var opcodes = "1,9,10,3,2,3,11,0,99,30,40,50";

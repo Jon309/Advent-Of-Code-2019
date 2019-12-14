@@ -35,24 +35,25 @@ namespace AdventOfCode._2019.DayTwo
 
         private void Process()
         {
-            for(var i = 3; i< _opcodes.Count - 1; i++)
+            for(var instructionPointer = 0; instructionPointer < _opcodes.Count - 1; instructionPointer++)
             {
-                if ((i + 1) % 4 == 0)
+                if ((instructionPointer + 1) % 4 == 0)
                 {
-                    var operation = GetInstruction(_opcodes[i - 3]);
+                    var operation = GetInstruction(_opcodes[instructionPointer - 3]);
                     
                     if (operation == Operations.Halt)
                     {
                         return;
                     }
                     
-                    var x = GetValue(_opcodes[i - 2]);
-                    var y = GetValue(_opcodes[i - 1]);
+                    var x = GetValue(_opcodes[instructionPointer - 2]);
+                    var y = GetValue(_opcodes[instructionPointer - 1]);
                 
-                    Relocate(_opcodes[i], Operate(x,y,operation));
+                    Relocate(_opcodes[instructionPointer], Operate(x,y,operation));
                 }
             }
         }
+
 
         public Operations GetInstruction(int number)
         {
@@ -84,14 +85,14 @@ namespace AdventOfCode._2019.DayTwo
             }
         }
 
-        public void Relocate(int index, int value)
+        public void Relocate(int address, int value)
         {
-            _opcodes[index] = value;
+            _opcodes[address] = value;
         }
 
-        public int GetValue(int index)
+        public int GetValue(int address)
         {
-            return _opcodes[index];
+            return _opcodes[address];
         }
 
     } 
