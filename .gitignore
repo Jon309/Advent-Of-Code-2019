@@ -22,3 +22,17 @@ AdventOfCode.2019.UnitTests/Properties/
 AdventOfCode.2019/bin/
 
 AdventOfCode.2019/obj/
+
+.vs/
+
+AdventOfCode.2019.DayOne/bin/
+
+AdventOfCode.2019.DayOne/obj/
+
+AdventOfCode.2019.DayOne/Properties/
+
+AdventOfCode.2019.DayTwo/bin/
+
+AdventOfCode.2019.DayTwo/obj/
+
+AdventOfCode.2019.DayTwo/Properties/

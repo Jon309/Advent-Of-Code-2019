@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Advent.Of.Code._2019._1
+namespace AdventOfCode._2019.DayOne
 {
     public interface IFuelCounter
     {
