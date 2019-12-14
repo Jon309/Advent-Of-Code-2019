@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Advent.Of.Code._2019._1
+namespace AdventOfCode._2019.DayOne
 {
     public class FuelCounter : IFuelCounter
     {
@@ -14,15 +14,21 @@ namespace Advent.Of.Code._2019._1
 
         public int CalculateTotalFuel(int mass)
         {
-            if (mass > 0)
+            if (mass <= 0)
             {
-                var fuel = CalculateFuel(mass);
-                if (fuel > 0)
-                {
-                    _totalFuel += fuel;
-                    CalculateTotalFuel(fuel); 
-                }
+                return _totalFuel;
             }
+            
+            var fuel = CalculateFuel(mass);
+            
+            if (fuel <= 0)
+            {
+                return _totalFuel;
+            }
+            
+            _totalFuel += fuel;
+            CalculateTotalFuel(fuel);
+
             return _totalFuel;
         }
 
@@ -35,8 +41,8 @@ namespace Advent.Of.Code._2019._1
                 _fuelSum += fuel;
                 _totalFuel = 0;
             }
+
             return _fuelSum;
         }
-
     }
 }

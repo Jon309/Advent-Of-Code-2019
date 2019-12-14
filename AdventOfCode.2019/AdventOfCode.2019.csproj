@@ -1,9 +1,0 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
-    <PropertyGroup>
-        <TargetFramework>net472</TargetFramework>
-        <RootNamespace>Advent.Of.Code._2019</RootNamespace>
-        <OutputType>Exe</OutputType>
-    </PropertyGroup>
-
-</Project>

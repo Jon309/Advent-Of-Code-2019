@@ -1,19 +1,17 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Runtime.CompilerServices;
 
-namespace Advent.Of.Code._2019._1
+namespace AdventOfCode._2019.DayOne
 {
-    public class Program
+    public static class Program
     {
         public static void Main(string[] args)
         {
             var massList = new List<int>();
             
             StreamReader input = 
-                new StreamReader("/Users/henny/dev/Advent.Of.Code.2019/AdventOfCode.2019/input.txt");
+                new StreamReader("/Users/henny/dev/Advent.Of.Code.2019/AdventOfCode.2019.DayOne/input.txt");
 
             while (!input.EndOfStream)
             {

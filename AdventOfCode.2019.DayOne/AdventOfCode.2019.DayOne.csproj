@@ -4,12 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B0351D8B-3044-4069-B259-01A54DE71111}</ProjectGuid>
-    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{659218B1-605A-4A87-8A89-1EF6DBD7C41D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AdventOfCode._2019.UnitTests</RootNamespace>
-    <AssemblyName>AdventOfCode._2019.UnitTests</AssemblyName>
+    <RootNamespace>AdventOfCode._2019.DayOne</RootNamespace>
+    <AssemblyName>AdventOfCode._2019.DayOne</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -33,32 +32,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FakeItEasy, Version=5.0.0.0, Culture=neutral, PublicKeyToken=eff28e2146d5fd2c">
-      <HintPath>..\packages\FakeItEasy.5.5.0\lib\net45\FakeItEasy.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="nunit.framework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb">
-      <HintPath>..\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DayOneTests.cs" />
-    <Compile Include="DayTwoTests.cs" />
+    <Compile Include="FuelCounter.cs" />
+    <Compile Include="IFuelCounter.cs" />
+    <Compile Include="Module.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AdventOfCode.2019.DayOne\AdventOfCode.2019.DayOne.csproj">
-      <Project>{1793a4a0-f449-4316-a76a-73ad5967aaca}</Project>
-      <Name>AdventOfCode.2019.DayOne</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\AdventOfCode.2019.DayTwo\AdventOfCode.2019.DayTwo.csproj">
-      <Project>{da91ba56-12d8-4150-972e-2a01146babe0}</Project>
-      <Name>AdventOfCode.2019.DayTwo</Name>
-    </ProjectReference>
+    <Content Include="input.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
