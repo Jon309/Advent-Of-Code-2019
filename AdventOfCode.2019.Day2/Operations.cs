@@ -1,4 +1,4 @@
-namespace AdventOfCode._2019.DayTwo
+namespace AdventOfCode._2019.Day2
 {
     public enum Operations
     {

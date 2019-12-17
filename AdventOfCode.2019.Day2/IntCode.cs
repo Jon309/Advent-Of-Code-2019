@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 using System.Security.Authentication;
 using System.Security.Cryptography.X509Certificates;
 
-namespace AdventOfCode._2019.DayTwo 
+namespace AdventOfCode._2019.Day2
 { 
     public class IntCode : IIntCode
     {

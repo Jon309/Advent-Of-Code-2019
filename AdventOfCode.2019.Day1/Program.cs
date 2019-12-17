@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace AdventOfCode._2019.DayOne
+namespace AdventOfCode._2019.Day1
 {
     public static class Program
     {
@@ -11,7 +11,7 @@ namespace AdventOfCode._2019.DayOne
             var massList = new List<int>();
             
             StreamReader input = 
-                new StreamReader("/Users/henny/dev/Advent.Of.Code.2019/AdventOfCode.2019.DayOne/input.txt");
+                new StreamReader("/Users/henny/dev/Advent.Of.Code.2019/AdventOfCode.2019.Day1/input.txt");
 
             while (!input.EndOfStream)
             {

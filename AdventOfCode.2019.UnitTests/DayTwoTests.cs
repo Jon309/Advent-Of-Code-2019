@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using NUnit.Framework;
-using AdventOfCode._2019.DayTwo;
+using AdventOfCode._2019.Day2;
 
 namespace AdventOfCode._2019.UnitTests
 {
@@ -13,7 +13,7 @@ namespace AdventOfCode._2019.UnitTests
         public void PartOneAnswerTest()
         {
             var opcodes = 
-                new StreamReader("/Users/henny/dev/Advent.Of.Code.2019/AdventOfCode.2019.DayTwo/input.txt")
+                new StreamReader("/Users/henny/dev/Advent.Of.Code.2019/AdventOfCode.2019.Day2/input.txt")
                     .ReadToEnd();
             
             var output = 2894520;
@@ -31,7 +31,7 @@ namespace AdventOfCode._2019.UnitTests
         public void PartTwoAnswerTest()
         {
             var opcodes = 
-                new StreamReader("/Users/henny/dev/Advent.Of.Code.2019/AdventOfCode.2019.DayTwo/input.txt")
+                new StreamReader("/Users/henny/dev/Advent.Of.Code.2019/AdventOfCode.2019.Day2/input.txt")
                     .ReadToEnd();
             
             var output = 2894520;

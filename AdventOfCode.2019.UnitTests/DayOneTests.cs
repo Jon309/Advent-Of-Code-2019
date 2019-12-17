@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using AdventOfCode._2019.DayOne;
+using AdventOfCode._2019.Day1;
 using NUnit.Framework;
 
 namespace AdventOfCode._2019.UnitTests
@@ -15,7 +15,7 @@ namespace AdventOfCode._2019.UnitTests
             var massList = new List<int>();
             
             StreamReader input = 
-                new StreamReader("/Users/henny/dev/Advent.Of.Code.2019/AdventOfCode.2019.DayOne/input.txt");
+                new StreamReader("/Users/henny/dev/Advent.Of.Code.2019/AdventOfCode.2019.Day1/input.txt");
 
             while (!input.EndOfStream)
             {
@@ -42,7 +42,7 @@ namespace AdventOfCode._2019.UnitTests
             var massList = new List<int>();
             
             StreamReader input = 
-                new StreamReader("/Users/henny/dev/Advent.Of.Code.2019/AdventOfCode.2019.DayOne/input.txt");
+                new StreamReader("/Users/henny/dev/Advent.Of.Code.2019/AdventOfCode.2019.Day1/input.txt");
 
             while (!input.EndOfStream)
             {

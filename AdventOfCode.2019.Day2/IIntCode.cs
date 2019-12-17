@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace AdventOfCode._2019.DayTwo
+namespace AdventOfCode._2019.Day2
 {
     public interface IIntCode
     {

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Security.Policy;
 
-namespace AdventOfCode._2019.DayTwo
+namespace AdventOfCode._2019.Day2
 {
     internal class Program
     {
@@ -19,7 +19,7 @@ namespace AdventOfCode._2019.DayTwo
         private static void Run()
         {
             var opcodes = 
-                new StreamReader("/Users/henny/dev/Advent.Of.Code.2019/AdventOfCode.2019.DayTwo/input.txt")
+                new StreamReader("/Users/henny/dev/Advent.Of.Code.2019/AdventOfCode.2019.Day2/input.txt")
                     .ReadToEnd();
             
             
